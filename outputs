@@ -1,0 +1,158 @@
+FEATURES:
+'eccentricity': eccentricity,
+'inclination': inclination,
+'raan': raan,
+'arg_perigee': arg_perigee,
+'mean_anomaly': mean_anomaly,
+'mean_motion': mean_motion,
+'semi_major_axis': semi_major_axis,
+'x': r[0],
+'y': r[1],
+'z': r[2],
+'vx': v[0],
+'vy': v[1],
+'vz': v[2],
+
+Unbalanced, all files (100 estimators)
+Accuracy: 0.9882352941176471
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2072
+           1       0.97      0.97      0.97       563
+
+    accuracy                           0.99      2635
+   macro avg       0.98      0.98      0.98      2635
+weighted avg       0.99      0.99      0.99      2635
+OOB Score: 0.9872829078485338
+Cross validation
+Mean Training Score: 0.9853848065858001
+Mean Validation Score: 0.9749525616698292
+Accuracy on the iri file: 0.9848484848484849
+
+__________________________________________________________________
+Balanced, all files (100 estimators)
+Accuracy: 0.9855787476280835  # accuracy reduced
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2072
+           1       0.95      0.98      0.97       563
+
+    accuracy                           0.99      2635
+   macro avg       0.97      0.98      0.98      2635
+weighted avg       0.99      0.99      0.99      2635
+
+OOB Score: 0.9909931547976462
+Mean Training Score: 0.985194963206588
+Mean Validation Score: 0.9757115749525618
+Accuracy on the iri file: 0.9772727272727273
+__________________________________________________________________
+Unbalanced, last file excluded
+Accuracy: 0.9873466257668712
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2065
+           1       0.97      0.97      0.97       543
+
+    accuracy                           0.99      2608
+   macro avg       0.98      0.98      0.98      2608
+weighted avg       0.99      0.99      0.99      2608
+OOB Score: 0.9880176380368099
+Mean Training Score: 0.9874429249965889
+Mean Validation Score: 0.979294901493591
+Accuracy on the iri file: 0.5075757575757576
+
+Balanced, last file removed
+Accuracy: 0.9850460122699386
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2065
+           1       0.95      0.98      0.96       543
+
+    accuracy                           0.99      2608
+   macro avg       0.97      0.98      0.98      2608
+weighted avg       0.99      0.99      0.99      2608
+
+OOB Score: 0.9907007439404848
+Mean Training Score: 0.9877302811864158
+Mean Validation Score: 0.9785278825718299
+Accuracy on the iri file: 0.6666666666666666
+
+__________________________________________________________________
+__________________________________________________________________
+__________________________________________________________________
+
+Features:
+'eccentricity': eccentricity,
+'inclination': inclination,
+'raan': raan,
+'arg_perigee': arg_perigee,
+'mean_anomaly': mean_anomaly,
+'mean_motion': mean_motion,
+'semi_major_axis': semi_major_axis,
+'x': r[0],
+'y': r[1],
+'z': r[2],
+'vx': v[0],
+'vy': v[1],
+'vz': v[2],
+'altitude': altitude,
+'perigee': perigee,
+'apogee': apogee,
+'orbital_period': orbital_period,
+'distance_from_center': distance_from_center,
+'specific_orbital_energy': specific_orbital_energy,
+'velocity_magnitude': velocity_magnitude,
+
+Unbalanced, last file excluded
+Accuracy: 0.9858128834355828
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2065
+           1       0.97      0.97      0.97       543
+
+    accuracy                           0.99      2608
+   macro avg       0.98      0.98      0.98      2608
+weighted avg       0.99      0.99      0.99      2608
+OOB Score: 0.9879217791411042
+Mean Training Score: 0.9866757689591917
+Mean Validation Score: 0.9773777218876166
+Accuracy on the iri file: 0.5984848484848485
+
+Balanced, Last file removed
+Accuracy: 0.9838957055214724
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2065
+           1       0.95      0.97      0.96       543
+
+    accuracy                           0.98      2608
+   macro avg       0.97      0.98      0.98      2608
+weighted avg       0.98      0.98      0.98      2608
+
+OOB Score: 0.9921406287497
+Mean Training Score: 0.9866757689591917
+Mean Validation Score: 0.9773777218876166
+Accuracy on the iri file: 0.7954545454545454
+
+Balanced, all files
+Accuracy: 0.9836812144212523
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.99      0.99      0.99      2072
+           1       0.95      0.98      0.96       563
+
+    accuracy                           0.98      2635
+   macro avg       0.97      0.98      0.98      2635
+weighted avg       0.98      0.98      0.98      2635
+
+OOB Score: 0.9907529722589168
+Mean Training Score: 0.9861442251319132
+Mean Validation Score: 0.9734345351043643
+Accuracy on the iri file: 0.9924242424242424
